@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Account - WEBSITE NAME</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <!---------- account ---------->
+    <div class="account">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="indicator">
+                        </div>
+
+                        <form id="loginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot Password?</a>
+                        </form>
+
+                        <form id="registerForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------- JS Account ---------->
+    <script>
+        var loginForm = document.getElementById("loginForm");
+        var registerForm = document.getElementById("registerForm");
+        var indicator = document.getElementById("indicator");
+
+        function register() {
+            registerForm.style.transform = "translateX(0px)";
+            loginForm.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(60px)";
+        }
+
+        function login() {
+            registerForm.style.transform = "translateX(300px)";
+            loginForm.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(-60px)";
+        }
+
+        
+    </script>
+</body>
