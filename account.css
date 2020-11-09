@@ -70,6 +70,10 @@ form .btn:focus {
   margin-right: 50px;
 }
 
+#forgotpswd {
+  margin-left: 20px;
+}
+
 form a {
     font-size: 12px;
 }
