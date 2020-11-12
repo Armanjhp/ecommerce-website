@@ -68,18 +68,25 @@ if (!empty($_POST)) {
     <head>
         <title>Contact Us</title>
         <link rel="stylesheet" type="text/css" href="contact.css">
+        <link rel="icon" type="image/png" href="contact-images/favicon.png" />
     </head>
     <body>
-        <div class="navbar">
-            <div class="logo"><img src="images/logo_transparent.png" height="250" width="250"></div>
-            <div class="links">
-                <a href="index.html">Home</a>
-                <a href="">About</a>
-                <a href="contact.php">Contact</a>
-                <a href="">Account</a>
-                <a href="">Product</a>
-                <a href=""><img src="images/cart.png" height="30" width="30"></a>
-            </div>
+        <div>
+		  <div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<img src="contact-images/logo.png" height="250" width="250">
+				</div>
+				<div class="links">
+					<a href="index.html">Home</a>
+					<a href="">About</a>
+					<a href="contact.php">Contact</a>
+					<a href="">Account</a>
+					<a href="">Product</a>
+					<a href=""><img class="cart" src="contact-images/cart.png" height="30" width="30"></a>
+				</div>
+			</div>
+		  </div>
         </div>
         <section id="contact-us">
             <div class="wrap chromerce-contactus">
@@ -106,5 +113,41 @@ if (!empty($_POST)) {
                 </div>
             </div>
         </section>
+        <div class="footer">
+		  <div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and ios devices</p>
+					<div class="app-logo">
+						<a href="https://play.google.com/">
+							<img src="contact-images/play-store.png">
+						</a>
+						<a href="https://www.apple.com/shop">
+							<img src="contact-images/app-store.png">
+						</a>
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<h3>Useful links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Return Policy</li>
+						<li>Join Affiliate</li>
+					</ul>
+				</div>
+				<div class="footer-col-3">
+					<h3>Follow us</h3>
+					<ul>
+						<li><a href="https://www.facebook.com/">Facebook</a></li>
+						<li><a href="https://twitter.com/">Twitter</a></li>
+						<li><a href="https://instagram.com/">Instagram</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright 2020 - Chromerce </p>
+		</div>
+	</div>
     </body>
 </html>
