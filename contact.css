@@ -59,9 +59,10 @@ p {
 }
 
 #contact-us {
-    padding: 30px 20px;
+    padding-top: 50px;
     position: relative;
     background: #fff;
+    min-height: calc(75vh - 40px);
 }
 
 #contact-us .chromerce-navigation-tab {
@@ -95,12 +96,6 @@ p {
     color: #000;
 }
 
-@media screen and (max-width: 767px) {
-    #contact-us .chromerce-navigation-tab span.margin-padding .hidden-xs {
-        display:none;
-    }
-}
-
 #contact-us .tab-seperator {
     display: block;
     height: 1px;
@@ -112,11 +107,6 @@ p {
     width: 90%;
 }
 
-@media screen and (max-width: 767px) {
-    #contact-us .tab-seperator {
-        width:100%;
-    }
-}
 
 #contact-us .wrap {
     max-width: 1200px;
@@ -132,20 +122,8 @@ p {
     padding-top: 30px;
 }
 
-@media screen and (max-width: 680px) {
-    #contact-us .wrap.affiliate {
-        padding-top:0;
-    }
-}
-
 #contact-us .wrap.affiliate .panel-left {
     width: 58%;
-}
-
-@media screen and (max-width: 680px) {
-    #contact-us .wrap.affiliate .panel-left {
-        width:100%;
-    }
 }
 
 #contact-us .wrap.affiliate .panel-left h3 {
@@ -173,12 +151,6 @@ p {
     width: 40%;
 }
 
-@media screen and (max-width: 680px) {
-    #contact-us .wrap.affiliate .pannel-right {
-        width:100%;
-    }
-}
-
 #contact-us .wrap.affiliate .pannel-right  .contact-form,#contact-us .wrap.affiliate .pannel-right .contact-form input[type=email],#contact-us .wrap.affiliate .pannel-right .contact-form input[type=number],#contact-us .wrap.affiliate .pannel-right .contact-form input[type=text] {
     width: 100%;
 }
@@ -196,12 +168,6 @@ p {
     text-align: left;
 }
 
-@media screen and (max-width: 680px) {
-    #contact-us .wrap .panel-left {
-        width:100%;
-        padding: 0;
-    }
-}
 
 #contact-us .wrap .panel-left h2 {
     font-size: 29px;
@@ -217,12 +183,6 @@ p {
 #contact-us .wrap .panel-left h1 {
     font-size: 36px;
     margin: 0 0 10px;
-}
-
-@media screen and (max-width: 767px) {
-    #contact-us .wrap .panel-left h1 {
-        font-size:30px;
-    }
 }
 
 #contact-us .wrap .panel-left h3 {
@@ -277,16 +237,6 @@ p {
     line-height: 1.5;
 }
 
-@media screen and (max-width: 680px) {
-    #contact-us .wrap .pannel-right {
-        width:100%;
-        float: left;
-        margin: 0 0 50px;
-        padding: 0;
-        border: 0;
-    }
-}
-
 #contact-us .wrap .pannel-right h3 {
     font-weight: 500;
     font-size: 20px;
@@ -316,12 +266,6 @@ p {
     padding: 15px 20px;
     margin-bottom: 20px;
     font-size: 16px;
-}
-
-@media screen and (max-width: 767px) {
-    #contact-us .contact-form .contact-form-field {
-        width:95%;
-    }
 }
 
 #contact-us .contact-form .submit-btn {
