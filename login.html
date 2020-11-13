@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chromerce | Login or Register</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!---------- navbar ---------->
+	<div>
+        <div class="container">
+        <div class="navbar">
+             <div class="logo">
+                 <img src="login-images/logo.png" alt="Chromerce logo" height="250" width="250">
+             </div>
+             <div class="links">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <a href="">Account</a>
+                <a href="">Product</a>
+                <a href=""><img class="cart" src="login-images/cart.png" alt="Cart image" height="30" width="30"></a>
+            </div>
+        </div>
+    
+        </div>
+        </div>
+    <!---------- login ---------->
+    <div class="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="indicator">
+                        </div>
+
+                        <form id="loginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a id="forgotpswd" href="">Forgot Password?</a>
+                        </form>
+
+                        <form id="registerForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Confirm Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------- footer ---------->
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and ios devices</p>
+					<div class="app-logo">
+						<a href="https://play.google.com/">
+							<img src="login-images/play-store.png" alt="Play Store logo">
+						</a>
+						<a href="https://www.apple.com/shop">
+							<img src="login-images/app-store.png" alt="App Store logo">
+						</a>
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<h3>Useful links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Return Policy</li>
+						<li>Join Affiliate</li>
+					</ul>
+				</div>
+				<div class="footer-col-3">
+					<h3>Follow us</h3>
+					<ul>
+						<li><a href="https://www.facebook.com/">Facebook</a></li>
+						<li><a href="https://twitter.com/">Twitter</a></li>
+						<li><a href="https://instagram.com/">Instagram</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright 2020 - Chromerce </p>
+		</div>
+	</div>
+
+    <!---------- JS Account ---------->
+    <script>
+        var loginForm = document.getElementById("loginForm");
+        var registerForm = document.getElementById("registerForm");
+        var indicator = document.getElementById("indicator");
+
+        function register() {
+            registerForm.style.transform = "translateX(0px)";
+            loginForm.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(60px)";
+        }
+
+        function login() {
+            registerForm.style.transform = "translateX(300px)";
+            loginForm.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(-60px)";
+        }
+
+        
+    </script>
+</body>
