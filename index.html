@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Home</title>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+
+        <!---------- navbar ---------->
+        
+        <div class="navbar">
+            <div class="logo"><img src="index-images/logo_transparent.png" alt="Website Logo" height="250" width="250" /></div>
+            <div class="links">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <a href="">Account</a>
+                <a href="">Product</a>
+                <a href=""><img src="index-images/cart.png" height="30" width="30" /></a>
+            </div>
+        </div>
+
+        <!---------- home ---------->
+
+        <div class="hero">
+            <header class="hero-title">
+                <h1>FIND THE PRODUCTS OF YOUR DREAMS!</h1>
+                <h1>Happiness guranteed!</h1>
+                <button><h1>Shop Now!</h1></button>
+            </header>
+        </div>
+
+        <div class="products">
+            <div class="wrapper">
+                <h1>Trending Now!</h1>
+                <div class="row">
+                    <div class="col-products">
+                        <img src="index-images/categorie-1.jpg " alt="Category Item1" />
+                        <h1 class="align">PierreBourne</h1>
+                        <p class="align">$40.00</p>
+                    </div>
+                    <div class="col-products">
+                        <img src="index-images/categorie-2.jpg" alt="Category Item2" />
+                        <h1 class="align">DjPremiere</h1>
+                        <p class="align">$40.00</p>
+                    </div>
+
+                    <div class="col-products">
+                        <img src="index-images/categorie-3.jpg" alt="Category Item3" />
+                        <h1 class="align">Mexikodro</h1>
+                        <p class="align">$40.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <h1 class="align">Products On Sale!</h1>
+            <h2 class="align">Under $20.00</h2>
+            <div class="row">
+                <div class="col-sale">
+                    <img src="" id="picsC" alt="Controllers" />
+                    <h3 class="align">Controllers!</h3>
+                </div>
+
+                <div class="col-sale">
+                    <img src="" id="picsK" alt="Keyboards" />
+                    <h3 class="align">Keyboards!</h3>
+                </div>
+
+                <div class="col-sale">
+                    <img src="" id="picsH" alt="Headphones" />
+                    <h3 class="align">Headphones!</h3>
+                </div>
+
+                <div class="col-sale">
+                    <img src="" id="picsS" alt="Speakers" />
+                    <h3 class="align">Speakers!</h3>
+                </div>
+            </div>
+        </div>
+
+        <!---------- footer ---------->
+
+        <div class="footer">
+            <div class="containerFooter">
+                <div class="rowFooter">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios devices</p>
+                        <div class="app-logo">
+                            <a href="https://play.google.com/">
+                                <img src="index-index-images/play-store.png" alt="Play-store logo" />
+                            </a>
+                            <a href="https://www.apple.com/shop">
+                                <img src="index-index-images/app-store.png" alt="App-store logo" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Useful links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/">Facebook</a></li>
+                            <li><a href="https://twitter.com/">Twitter</a></li>
+                            <li><a href="https://instagram.com/">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <p class="copyright">Copyright 2020 - Chromerce</p>
+            </div>
+        </div>
+
+        <script>
+            var randomIndex = Math.floor(Math.random() * 3) + 1; // returns a random integer from 0 to 2
+
+            document.getElementById("picsC").src = "index-images/C" + randomIndex + ".jpg";
+            document.getElementById("picsK").src = "index-images/K" + randomIndex + ".jpg";
+            document.getElementById("picsH").src = "index-images/H" + randomIndex + ".jpg";
+
+            document.getElementById("picsS").src = "index-images/S" + randomIndex + ".jpg";
+        </script>
+    </body>
+</html>
