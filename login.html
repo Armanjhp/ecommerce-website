@@ -8,24 +8,23 @@
 </head>
 <body>
     <!---------- navbar ---------->
-	<div>
-        <div class="container">
-        <div class="navbar">
-             <div class="logo">
-                 <img src="login-images/logo.png" alt="Chromerce logo" height="250" width="250">
-             </div>
-             <div class="links">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
-                <a href="">Account</a>
-                <a href="">Product</a>
-                <a href=""><img class="cart" src="login-images/cart.png" alt="Cart image" height="30" width="30"></a>
+    <div class="navbar-container">
+        <nav>
+            <a href="index.html" class="logo"><img src="login-images/logo.png" alt="Chromerce logo" height="250" width="250"></a>
+            <input type="checkbox" id="toggle-navbar" value="2">
+            <label for="toggle-navbar" class="hamburger">
+                <img src="login-images/hamburger.png" alt="hamburger icon">
+            </label>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Account</a>
+                <a href="#">Product</a>
+                <a href="#"><img class="cart" src="login-images/cart.png" alt="Cart image" height="30" width="30" /></a>
             </div>
-        </div>
-    
-        </div>
-        </div>
+        </nav>
+    </div>
     <!---------- login ---------->
     <div class="login">
         <div class="container">
@@ -42,13 +41,18 @@
                             <input type="text" placeholder="Username">
                             <input type="password" placeholder="Password">
                             <button type="submit" class="btn">Login</button>
-                            <a id="forgotpswd" href="">Forgot Password?</a>
+                            <a id="forgotpswd" href="forgotpassword.html">Forgot Password?</a>
                         </form>
 
                         <form id="registerForm">
                             <input type="text" placeholder="Username">
                             <input type="email" placeholder="Email">
-                            <input type="password" placeholder="Password">
+                            <div class="passwordinfo">
+                                <input type="password" placeholder="Password">
+                                <div class="info">&#x1F6C8;
+                                    <span class="infotext">Password must be 8 characters long</span>
+                                </div>
+                            </div>
                             <input type="password" placeholder="Confirm Password">
                             <button type="submit" class="btn">Register</button>
                         </form>
@@ -114,7 +118,5 @@
             loginForm.style.transform = "translateX(300px)";
             indicator.style.transform = "translateX(-60px)";
         }
-
-        
     </script>
 </body>

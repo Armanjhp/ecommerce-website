@@ -1,60 +1,73 @@
 /*---------- navbar ----------*/
-.navbar{
-  display:grid;
-  min-height:100px;
-  grid-auto-flow: column;
-  grid-gap:20px;
-  padding-left:20px;
-  padding-right:20px;
+.navbar-container {
+  width: 100%;
+  background: white;
 }
 
-.cart {
-position: relative;
-bottom: 4px;
-}
-
-.logo{
+nav {
+  max-width: 1720px;
+  margin: 0 auto;
   display: grid;
-  justify-content: center;
-  align-content: center;
-
+  grid-template-columns: auto 1fr 1fr;
 }
 
-.links{
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: center;
-  align-content: center;
-  grid-gap: 20px;
+.logo {
+  grid-column: 1;
+}
+
+.menu {
+  grid-column: 2;
+  align-self: center;
+}
+
+.menu a {
+  padding: 10px 0;
+  margin-left: 50px;
   font-size: 20px;
-
 }
-  
+
 a {
-text-decoration: none;
-color: #343a40;
+  text-decoration: none;
+  color: #343a40;
 }
 
 a:hover{
-text-decoration:underline;
+  text-decoration:underline;
 }
-  
+    
 p {
-color: #f8f9fa;
+  color: #f8f9fa;
 }
 
-.container {
-margin: auto;
+.cart {
+  position: relative;
+  top: 8px;
 }
 
-.header .row {
-margin-top: 70px;
+#toggle-navbar, .hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 1025px) {
+  .menu {
+    display: none;
+  }
+  
+  .hamburger {
+    display: inline-block;
+    margin-top: 100px;
+  }
+
+  #toggle-navbar:checked ~ .menu {
+    display: grid;
+    grid-row: 2;
+    grid-column: 1;
+  }
 }
 
 /*---------- login ----------*/
 .login {
     padding: 50px 0;
-    background: radial-gradient(#fff,#ffd6d6);
 }
 
 .form-container {
@@ -110,6 +123,43 @@ form .btn:focus {
   outline: none;
 }
 
+.passwordinfo {
+  position: relative;
+}
+
+.passwordinfo input {
+  display: block;
+}
+
+.passwordinfo .info {
+  position: absolute;
+  top: 3px;
+  left: 230px;
+}
+
+.info {
+  position: relative;
+  display: inline-block;
+}
+
+.info .infotext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -100px; 
+}
+
+.info:hover .infotext {
+  visibility: visible;
+}
+
 #loginForm {
   width: 80%;  
   align-items: center;
@@ -124,6 +174,13 @@ form .btn:focus {
   margin-right: 50px;
 }
 
+#forgotForm {
+  width: 80%;  
+  align-items: center;
+  left: 0px;
+  margin-left: 0px;
+}
+
 #forgotpswd {
   margin-left: 20px;
 }
@@ -135,11 +192,24 @@ form a {
 #indicator {
     width: 100px;
     border: none;
-    background: #ff523b;
+    background: black;
     height: 3px;
     margin-top: 8px;
     transform: translateX(60px);
     transition: transform 1s;
+}
+
+#forgotindicator {
+  width: 100px;
+  border: none;
+  background: black;
+  height: 3px;
+  margin-top: 8px;
+}
+
+#instructions {
+  color: red;
+  margin-left: 15px;
 }
 
 /*---------- footer ----------*/
