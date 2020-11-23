@@ -223,6 +223,11 @@ form a {
 	flex-direction: row;
 }
 
+
+.footer-container {
+	margin: auto;
+}
+
 .footer p {
 	color: #f8f9fa;
 }
@@ -236,7 +241,7 @@ form a {
 	margin-bottom: 20px; 
 }
 
-.row {
+.footer-row {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
