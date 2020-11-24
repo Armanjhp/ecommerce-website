@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chromerce | Login or Register</title>
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="template.css">
 </head>
 <body>
-    <!---------- navbar ---------->
+    <?php 
+        include(navbar.php);
+    ?>
     <div class="navbar-container">
         <nav>
             <a href="index.html" class="logo"><img src="login-images/logo.png" alt="Chromerce logo" height="250" width="250"></a>
@@ -64,42 +67,9 @@
 
     <!---------- footer ---------->
 
-	<div class="footer">
-		<div class="footer-container">
-			<div class="footer-row">
-				<div class="footer-col-1">
-					<h3>Download Our App</h3>
-					<p>Download App for Android and ios devices</p>
-					<div class="app-logo">
-						<a href="https://play.google.com/">
-							<img src="login-images/play-store.png" alt="Play Store logo">
-						</a>
-						<a href="https://www.apple.com/shop">
-							<img src="login-images/app-store.png" alt="App Store logo">
-						</a>
-					</div>
-				</div>
-				<div class="footer-col-2">
-					<h3>Useful links</h3>
-					<ul>
-						<li>Coupons</li>
-						<li>Return Policy</li>
-						<li>Join Affiliate</li>
-					</ul>
-				</div>
-				<div class="footer-col-3">
-					<h3>Follow us</h3>
-					<ul>
-						<li><a href="https://www.facebook.com/">Facebook</a></li>
-						<li><a href="https://twitter.com/">Twitter</a></li>
-						<li><a href="https://instagram.com/">Instagram</a></li>
-					</ul>
-				</div>
-			</div>
-			<hr>
-			<p class="copyright">Copyright 2020 - Chromerce </p>
-		</div>
-	</div>
+    <?php 
+        include(footer.php);
+    ?>
 
     <!---------- JS Account ---------->
     <script>
