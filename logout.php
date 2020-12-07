@@ -3,6 +3,6 @@
     $_SESSION = array();
 
     session_destroy();
-    header("location: loginpage.php");
-    exit;
+    header("Location: " . $_SERVER['HTTP_REFERER']);
+    exit();
 ?>

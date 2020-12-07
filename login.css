@@ -1,6 +1,13 @@
 /*---------- login ----------*/
+* {
+  font-family: 'Roboto',georgia,garamond,serif;
+}
 .login {
     padding: 50px 0;
+}
+
+a {
+  margin-left: 15px;
 }
 
 .form-container {
@@ -13,6 +20,8 @@
     margin: auto;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
     overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
 }
 
 .form-container span {
@@ -50,6 +59,7 @@ form .btn {
     border: none;
     cursor: pointer;
     margin: 10px;
+    border: 1px solid #ccc;
 }
 
 form .btn:focus {

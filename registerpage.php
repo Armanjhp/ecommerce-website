@@ -9,6 +9,7 @@
 </head>
 <body>
 <?php
+    //ALL THE FUNCTIONALITIES FOR THE LOGIN&REGISTERATION ARE BASED ON: https://www.tutorialrepublic.com/php-tutorial/php-mysql-login-system.php
     require_once "database.php";
     $username = "";
     $password = "";
@@ -19,7 +20,7 @@
 
     //REGISTER
     if($_SERVER["REQUEST_METHOD"] == "POST") {
-        //Username validation
+
         if(empty(trim($_POST["username"]))) {
             $username_error = "Please enter a username";
             echo '<script language="javascript">';
@@ -72,6 +73,7 @@
 
         else {
             $confirm_password = trim($_POST["confirm_password"]);
+
             if(empty($password_error) || ($password != $confirm_password)) {
                 $confirm_password = "Passowrds must match";
                 echo '<script language="javascript">';

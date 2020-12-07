@@ -12,6 +12,7 @@
                 <a href="location.php">Location</a>
                 <a href="products.php">Products</a>
                 <?php
+                session_start();
                 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
                     echo '<a href="logout.php">Logout</a>';
                     echo '<a href="userprofile.php">Account</a>';
