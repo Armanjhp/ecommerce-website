@@ -17,25 +17,6 @@ p {
 	margin-top: 70px;
 }
 
-/*---------- logo ----------*/
-.logo{
-	margin-right: 10px;
-    display:grid;
-    justify-content:center;
-    align-content:center;
-
-}
-
-.links{
-    display:grid;
-    grid-auto-flow: column;
-    justify-content:center;
-    align-content:center;
-    grid-gap:20px;
-    font-size:20px;
-
-}
-
 .hero {
 	display: flex;
   	flex-direction: column;
