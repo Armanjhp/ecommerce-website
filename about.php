@@ -3,31 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<title>About Chromerce</title>
-	<link rel="icon" type="image/png" href="about-images/favicon.png"/>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+	<link rel="icon" type="image/png" href="template-images/favicon.png"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="about.css">
+	<link rel="stylesheet" type="text/css" href="template.css">
 </head>
 <body>
 
 	<!---------- navbar ---------->
-	<div>
-	<div class="container">
-    <div class="navbar">
-		 <div class="logo">
-		 	<img src="about-images/logo.png" height="250" width="250">
-		 </div>
-         <div class="links">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
-            <a href="">Account</a>
-            <a href="">Product</a>
-            <a href=""><img class="cart" src="about-images/cart.png" height="30" width="30"></a>
-        </div>
-    </div>
-
-	</div>
-	</div>
+	<?php
+	include("navbar.php");
+	?>
 
 	<!---------- testimonial slider ---------->
 	<div class="testimonial">
@@ -64,61 +51,59 @@
 						<i class="fa fa-star"></i>
 						<i class="fa fa-star"></i>
 						<div class="rbd-content"><img class="rbd-gravatar" src="about-images/user-3.png">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever. on Nov. 8, 2020</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<script>
-	let options = {
-	'speed': 3000,
-	'pause': true,
-}
-
-window.addEventListener('DOMContentLoaded', function() {
-	let slider = document.querySelector('.rbd-review-slider');
-	let slides = slider.querySelectorAll('.rbd-review');
-	let total  = slides.length;
-	let pause  = false;
-	
-	function pauseSlide(){
-		slider.onmouseleave = function(){ pause = false; };
-		slider.onmouseenter = function(){ pause = true; };
-		return pause;
+	<script>
+		let options = {
+		'speed': 3000,
+		'pause': true,
 	}
-	
-	function slide(){
-		if( options.pause && pauseSlide() ) return;
+
+	window.addEventListener('DOMContentLoaded', function() {
+		let slider = document.querySelector('.rbd-review-slider');
+		let slides = slider.querySelectorAll('.rbd-review');
+		let total  = slides.length;
+		let pause  = false;
 		
-		let activeSlide = document.querySelector('.rbd-review-slider .rbd-review.rbd-curr');
-		let prev, curr, next, soon;		
-		
-		curr = activeSlide;
-		prev = activeSlide.previousElementSibling;
-		next = activeSlide.nextElementSibling;
-		
-		if( next != null ){
-			soon = next.nextElementSibling == null ? slides[0] : next.nextElementSibling;
-		} else {
-			next = slides[0];
-			soon = slides[1];
+		function pauseSlide(){
+			slider.onmouseleave = function(){ pause = false; };
+			slider.onmouseenter = function(){ pause = true; };
+			return pause;
 		}
 		
-		if( prev != null ) prev.classList.remove('rbd-prev', 'rbd-curr', 'rbd-next');
-		if( curr != null ) curr.classList.remove('rbd-prev', 'rbd-curr', 'rbd-next'); curr.classList.add('rbd-prev');
-		if( next != null ) next.classList.remove('rbd-prev', 'rbd-curr', 'rbd-next'); next.classList.add('rbd-curr');
-		if( soon != null ) soon.classList.remove('rbd-prev', 'rbd-curr', 'rbd-next'); soon.classList.add('rbd-next');
-	}
-	
-	let slideTimer = setInterval(function(){
-		slide();
-	}, options.speed);
-}, true);
-</script>
-
-
+		function slide(){
+			if( options.pause && pauseSlide() ) return;
+			
+			let activeSlide = document.querySelector('.rbd-review-slider .rbd-review.rbd-curr');
+			let prev, curr, next, soon;		
+			
+			curr = activeSlide;
+			prev = activeSlide.previousElementSibling;
+			next = activeSlide.nextElementSibling;
+			
+			if( next != null ){
+				soon = next.nextElementSibling == null ? slides[0] : next.nextElementSibling;
+			} else {
+				next = slides[0];
+				soon = slides[1];
+			}
+			
+			if( prev != null ) prev.classList.remove('rbd-prev', 'rbd-curr', 'rbd-next');
+			if( curr != null ) curr.classList.remove('rbd-prev', 'rbd-curr', 'rbd-next'); curr.classList.add('rbd-prev');
+			if( next != null ) next.classList.remove('rbd-prev', 'rbd-curr', 'rbd-next'); next.classList.add('rbd-curr');
+			if( soon != null ) soon.classList.remove('rbd-prev', 'rbd-curr', 'rbd-next'); soon.classList.add('rbd-next');
+		}
+		
+		let slideTimer = setInterval(function(){
+			slide();
+		}, options.speed);
+	}, true);
+	</script>
 
 	<!---------- content ---------->
 	<div class="content">
@@ -151,46 +136,10 @@ window.addEventListener('DOMContentLoaded', function() {
 		</div>
 	</div>
 
-
-
 	<!---------- footer ---------->
-
-	<div class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="footer-col-1">
-					<h3>Download Our App</h3>
-					<p>Download App for Android and ios devices</p>
-					<div class="app-logo">
-						<a href="https://play.google.com/">
-							<img src="about-images/play-store.png">
-						</a>
-						<a href="https://www.apple.com/shop">
-							<img src="about-images/app-store.png">
-						</a>
-					</div>
-				</div>
-				<div class="footer-col-2">
-					<h3>Useful links</h3>
-					<ul>
-						<li>Coupons</li>
-						<li>Return Policy</li>
-						<li>Join Affiliate</li>
-					</ul>
-				</div>
-				<div class="footer-col-3">
-					<h3>Follow us</h3>
-					<ul>
-						<li><a href="https://www.facebook.com/">Facebook</a></li>
-						<li><a href="https://twitter.com/">Twitter</a></li>
-						<li><a href="https://instagram.com/">Instagram</a></li>
-					</ul>
-				</div>
-			</div>
-			<hr>
-			<p class="copyright">Copyright 2020 - Chromerce </p>
-		</div>
-	</div>
+	<?php
+	include("footer.php");
+	?>
 
 
 
