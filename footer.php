@@ -1,5 +1,3 @@
-    <!---------- footer ---------->
-
 	<div class="footer">
 		<div class="footer-container">
 			<div class="footer-row">
@@ -33,6 +31,6 @@
 				</div>
 			</div>
 			<hr>
-			<p class="copyright">Copyright 2020 - Chromerce </p>
+			<p class="copyright">Copyright 2020 - Chromerce</p>
 		</div>
 	</div>
