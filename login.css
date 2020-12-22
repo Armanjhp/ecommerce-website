@@ -1,60 +1,13 @@
-/*---------- navbar ----------*/
-.navbar{
-  display:grid;
-  min-height:100px;
-  grid-auto-flow: column;
-  grid-gap:20px;
-  padding-left:20px;
-  padding-right:20px;
-}
-
-.cart {
-position: relative;
-bottom: 4px;
-}
-
-.logo{
-  display: grid;
-  justify-content: center;
-  align-content: center;
-
-}
-
-.links{
-  display: grid;
-  grid-auto-flow: column;
-  justify-content: center;
-  align-content: center;
-  grid-gap: 20px;
-  font-size: 20px;
-
-}
-  
-a {
-text-decoration: none;
-color: #343a40;
-}
-
-a:hover{
-text-decoration:underline;
-}
-  
-p {
-color: #f8f9fa;
-}
-
-.container {
-margin: auto;
-}
-
-.header .row {
-margin-top: 70px;
-}
-
 /*---------- login ----------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto',georgia,garamond,serif;
+}
+
 .login {
     padding: 50px 0;
-    background: radial-gradient(#fff,#ffd6d6);
 }
 
 .form-container {
@@ -67,6 +20,8 @@ margin-top: 70px;
     margin: auto;
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
     overflow: hidden;
+    border-width: 1px;
+    border-style: solid;
 }
 
 .form-container span {
@@ -103,29 +58,61 @@ form .btn {
     width: 100%;
     border: none;
     cursor: pointer;
-    margin: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
 }
 
 form .btn:focus {
   outline: none;
 }
 
+.passwordinfo {
+  position: relative;
+}
+
+.passwordinfo input {
+  display: block;
+}
+
+.passwordinfo .info {
+  position: absolute;
+  top: 3px;
+  left: 230px;
+}
+
+.info {
+  position: relative;
+  display: inline-block;
+}
+
+.info .infotext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -100px;
+}
+
+.info:hover .infotext {
+  visibility: visible;
+}
+
 #loginForm {
-  width: 80%;  
+  width: 100%;  
   align-items: center;
-  left: -350px;
-  margin-left: 50px;
 }
 
 #registerForm {
-  width: 80%;  
+  width: 100%;  
   align-items: center;
   left: 0px;
-  margin-right: 50px;
-}
-
-#forgotpswd {
-  margin-left: 20px;
 }
 
 form a {
@@ -135,81 +122,14 @@ form a {
 #indicator {
     width: 100px;
     border: none;
-    background: #ff523b;
+    background: black;
     height: 3px;
     margin-top: 8px;
-    transform: translateX(60px);
-    transition: transform 1s;
 }
 
-/*---------- footer ----------*/
-.footer {
-	background-color: #343a40;
-	color: #f8f9fa;
-	font-size: 14px;
-	padding: 60px 0 20px;
-	margin-top: 50px;
-	display: flex;
-	flex-direction: row;
-}
-
-.footer p {
-	color: #f8f9fa;
-}
-
-.footer a {
-	color: #f8f9fa;
-}
-		
-.footer h3 {
-	color: #f8f9fa;
-	margin-bottom: 20px; 
-}
-
-.row {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-
-.footer-col-1, .footer-col-2, .footer-col-3 {
-	min-width: 250px;
-	margin-bottom: 20px;
-}
-		
-.footer-col-1 {
-	margin-left: 40px;
-	flex-basis: 30%;
-}
-
-		
-.footer-col-2, .footer-col-3 {
-	flex-basis: 1;
-	text-align: center;
-}
-
-ul {
-	list-style-type: none;
-}
-		
-.app-logo {
-	margin-top: 20px;
-}
-
-.app-logo img {
-	width: 140px;
-}
-		
-.footer hr {
-	border: none;
-	background-color: #b5b5b5;
-	height: 1px;
-	margin: 20px 0;
-}
-		
-.copyright {
-	text-align: center;
+#instructions {
+  color: red;
+  margin-left: 15px;
 }
 
 /*---------- grid ----------*/
