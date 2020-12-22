@@ -1,0 +1,257 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto',georgia,garamond,serif;
+}
+		
+p {
+	color: #f8f9fa;
+}
+	
+.container {
+	margin: auto;
+}
+	
+.header .row {
+	margin-top: 70px;
+}
+
+.hero {
+	display: flex;
+  	flex-direction: column;
+  	height: auto;
+  	width: auto;
+  	background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm233-eye-02.jpg?w=1300&dpr=1&fit=default&crop=default&q=80&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=b625852b7057993e0983ec35ceb8e4b3");
+  	background-position: center;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	margin:auto;
+  	align-items: center;
+  	color:white;
+  	padding-top:100px;
+  	padding-bottom:100px;
+  	justify-content:center;
+  	flex-flow: row wrap;
+   	overflow: hidden;
+}
+
+.hero-title{
+  	text-align: center;
+	color: #f8f9fa;
+	font-size: 60px;
+	font-weight: 300;
+	line-height: 60px;
+	margin: 25px 0;
+
+}
+
+/*---------- testimonial slider ----------*/
+.rbd-review-slider {
+
+}
+
+.rbd-review-slider .rbd-preloader {
+	width: 36px;
+	height: 36px;
+	margin: 0 auto;
+}
+
+.rbd-review-slider .rbd-review.rbd-prev {
+	transform: translate3d(-100px,0,-50px);
+	display: inline-block;
+}
+
+.rbd-review-slider .rbd-review.rbd-next {
+	transform: translate3d(100px,0,-50px);
+	display: inline-block;
+}
+
+.rbd-review-slider .rbd-review.rbd-curr {
+	z-index: 10;
+	transform: translate3d(0,0,0) scale(1);
+	opacity: 1;
+	display: inline-block;
+}
+
+.rbd-review-slider .rbd-review {
+	padding: 20px 30px;
+	font-size: 18px;
+	line-height: 1.612;
+	border-radius: 4px;
+	box-shadow: 0 10px 30px -8px rgba(0,0,0,.5);
+	
+	display: none;
+	vertical-align: top;
+	transition: opacity .35s ease-out, transform .35s ease-out;
+	opacity: 1;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	opacity: 0;
+	
+	background: #fff;
+	max-width: 600px;
+}
+
+.rbd-review-slider .rbd-review.rbd-first {
+	display: block;
+}
+
+.rbd-review-slider .rbd-heading {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.rbd-review-slider svg {
+	fill: #ffbb58;
+	width: 24px;
+	margin-right: 1px;
+}
+
+.rbd-review-slider .rbd-review-meta {
+	font-size: 12px;
+	color: white;
+	margin-top: 12px;
+	text-align: center;
+}
+
+.rbd-review-slider .rbd-gravatar {
+  border-radius: 100%;
+  width: 100px;
+  float: left;
+  margin-right: 15px;
+  border: 6px solid transparent;
+  box-shadow: 0 3px 12px -2px rgba(0,0,0,.35);
+}
+
+.rbd-footing {
+	margin: 20px 0 0;
+	text-align: center;
+}
+
+@keyframes round{   
+  25%{
+    opacity:1;
+  }
+  40%{
+    opacity:0;
+  }
+} 
+
+/*---------- content ----------*/
+
+.content {
+	margin-bottom: 150px;
+	margin-top: 400px;
+}
+
+.content .col-2 img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	height: 450px;
+	max-width: 100%;
+}
+.content .intro {
+	margin-top: 75px;
+}
+	
+.content .culture {
+	margin-top: 50px;
+}
+
+.content img {
+	display: block;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	height: 300px;
+	max-width: 100%;
+}
+		
+.content .corporate-citizenship {
+	margin-top: 50px;
+}
+	
+.content p {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	font-size: 20px;
+	font-weight: 200;
+	width: 700px;
+	color: #000;
+}
+		
+.content h2 {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	font-size: 40px;
+	font-weight: 300;
+	width: 700px;
+	color: black;
+}
+
+/*---------- testimonial ----------*/
+.testimonial {
+	padding-top: 100px;
+	margin-top: 50px;
+}
+		
+.testimonial .row {
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.testimonial h2 {
+	display: grid;
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 40px;
+	font-weight: 300;
+}
+
+.testimonial .col-3 {
+	text-align: center;
+	width: 300px;
+	height: auto;
+	padding: 40px 20px;
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+	
+.testimonial .col-3 img {
+	width: 50px;
+	margin-top: 20px;
+	border-radius: 50%;
+}
+
+.testimonial .col-3:hover {
+	transform: translateY(-10px);
+}
+		
+.fa.fa-quote-left{
+	font-size: 34px;
+}
+
+.col-3 p {
+	font-size: 13px;
+	color: #343a40;
+	margin: 12px 0;
+}
+		
+.testimonial .col-3 h3{
+	font-weight: 600;
+	font-size: 16px;
+}
+
+
+
