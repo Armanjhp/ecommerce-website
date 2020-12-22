@@ -1,0 +1,88 @@
+* {
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	font-family: 'Roboto',georgia,garamond,serif;
+}
+
+.location-form-Wrapper{
+display:flex;
+margin-top:50px;
+	 margin-bottom:50px;
+
+
+
+justify-content: space-around;
+align-items:center;
+
+}
+.location-form-row{
+
+display:flex;
+	 align-items:center;
+	 flex-wrap:wrap;
+}
+
+.location-form-space{
+	 padding:30px;
+}
+
+.location-form-btn{
+	 margin-left:18px;
+	 text-align:center;
+	 padding-left:2px;
+	 padding-right:2px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+
+}
+
+
+
+.longitude-space{
+	 padding-right:3px;
+}
+
+.latitude-space{
+	 padding-right:15px;
+}
+
+
+#mapid{
+margin-top:20px;
+
+
+
+
+height: 500px;
+width: 1000px;
+
+
+
+}
+
+.location-map-wrapper{
+	 display:flex;
+	 justify-content:center;
+
+}
+
+.location-form-row {
+	box-shadow: 0 10px 30px -8px rgba(0,0,0,.5);
+}
+
+.map-row{
+	 display:flex;
+	 align-items:center;
+	 flex-wrap:wrap;
+	 justify-content:space-around;
+
+}
+
+.map-col{
+	 min-wdith:300px;
+	 height:500px;
+}
