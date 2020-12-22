@@ -17,10 +17,6 @@ p {
 	margin-top: 70px;
 }
 
-
-
-
-
 .hero {
 	display: flex;
   	flex-direction: column;
@@ -87,7 +83,7 @@ p {
 	
 	display: none;
 	vertical-align: top;
-	transition: opacity .35s ease-out, transform .35s ease-out;;
+	transition: opacity .35s ease-out, transform .35s ease-out;
 	opacity: 1;
 	position: absolute;
 	left: 0;

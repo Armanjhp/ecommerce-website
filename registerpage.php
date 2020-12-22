@@ -75,7 +75,7 @@
         else {
             $confirm_password = trim($_POST["confirm_password"]);
 
-            if(empty($password_error) || ($password != $confirm_password)) {
+            if(($password != $confirm_password)) {
                 $confirm_password = "Passowrds must match";
                 echo '<script language="javascript">';
                 echo 'alert("Passwords must match")';

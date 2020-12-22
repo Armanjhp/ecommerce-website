@@ -6,10 +6,10 @@
 					<p>Download App for Android and ios devices</p>
 					<div class="app-logo">
 						<a href="https://play.google.com/">
-							<img src="template-images/play-store.png" alt="Play Store logo">
+							<img src="images/play-store.png" alt="Play Store logo">
 						</a>
 						<a href="https://www.apple.com/shop">
-							<img src="template-images/app-store.png" alt="App Store logo">
+							<img src="images/app-store.png" alt="App Store logo">
 						</a>
 					</div>
 				</div>
