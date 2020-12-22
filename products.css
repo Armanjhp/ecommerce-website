@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
+    font-family: 'Roboto',georgia,garamond,serif;
 }
 .small-container{
     max-width: 1080px;
@@ -39,7 +39,7 @@
 }
 .title::after{
     content: '';
-    background: #437ae0;
+    background: black;
     width: 80px;
     height: 5px;
     border-radius: 5px;
@@ -102,209 +102,19 @@ input:focus{
 
 #button{
     width: 165px;
-    
-    
 }
 
-/*---header---*/
-
-.header{
-    background-image: url("https://cdn.pixabay.com/photo/2016/04/30/20/41/banner-1363794_960_720.jpg");
-    display: flex;
-    border: 1px solid black;
-    width: 100vh;
-    flex-direction:row;
-    margin:auto;
-        background-repeat: no-repeat;
-         justify-content:center;
-             align-content:center;
-    padding:40px;
-    color:white;
-}
-
-.navbar{
-    display:grid;
-    min-height:100px;
-    grid-auto-flow: column;
-    grid-gap:20px;
-    padding-left:20px;
-    padding-right:20px;
-
-
-}
-
-.cart {
-	position: relative;
-	bottom: 4px;
-}
-
-.logo{
-    display: grid;
-    justify-content: center;
-    align-content: center;
-
-}
-
-.links{
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: center;
-    align-content: center;
-    grid-gap: 20px;
-    font-size: 20px;
-
-}
-		
-a {
-	text-decoration: none;
-	color: #343a40;
-}
-
-a:hover{
- text-decoration:underline;
-}
-		
-p {
-	color: #f8f9fa;
-}
-	
 .container {
 	margin: auto;
 }
-	
-.header .row {
-	margin-top: 70px;
-}
-
-/*---------- logo ----------*/
-.logo{
-	margin-right: 10px;
-    display:grid;
-    justify-content:center;
-    align-content:center;
-
-}
-
-.links{
-    display:grid;
-    grid-auto-flow: column;
-    justify-content:center;
-    align-content:center;
-    grid-gap:20px;
-    font-size:20px;
-
-}
-
-.hero {
-	display: flex;
-  	flex-direction: column;
-  	height: auto;
-  	width: auto;
-  	background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm233-eye-02.jpg?w=1300&dpr=1&fit=default&crop=default&q=80&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=b625852b7057993e0983ec35ceb8e4b3");
-  	background-position: center;
-  	background-size: cover;
-  	background-repeat: no-repeat;
-  	margin:auto;
-  	align-items: center;
-  	color:white;
-  	padding-top:100px;
-  	padding-bottom:100px;
-  	justify-content:center;
-  	flex-flow: row wrap;
-   	overflow: hidden;
-}
-
-.hero-title{
-  	text-align: center;
-	color: #f8f9fa;
-	font-size: 60px;
-	font-weight: 300;
-	line-height: 60px;
-	margin: 25px 0;
-
-}
     
 button{
-    
         background-color:black;
         color:white;
         border-radius: 2px;
         padding:10px;
         margin-top:25px;
         margin-bottom:25px;
-          justify-content:center;
-          font-size:10px;
-    
-    
-    }
-
-/*---footer*/
-
-    .footer {
-        background-color: #343a40;
-        color: #f8f9fa;
-        font-size: 14px;
-        padding: 60px 0 20px;
-        margin-top: 50px;
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .footer p {
-        color: #f8f9fa;
-    }
-    
-    .footer a {
-        color: #f8f9fa;
-    }
-            
-    .footer h3 {
-        color: #f8f9fa;
-        margin-bottom: 20px; 
-    }
-    
-    .row {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    
-    .footer-col-1, .footer-col-2, .footer-col-3 {
-        min-width: 250px;
-        margin-bottom: 20px;
-    }
-            
-    .footer-col-1 {
-        margin-left: 40px;
-        flex-basis: 30%;
-    }
-    
-            
-    .footer-col-2, .footer-col-3 {
-        flex-basis: 1;
-        text-align: center;
-    }
-    
-    ul {
-        list-style-type: none;
-    }
-            
-    .app-logo {
-        margin-top: 20px;
-    }
-    
-    .app-logo img {
-        width: 140px;
-    }
-            
-    .footer hr {
-        border: none;
-        background-color: #b5b5b5;
-        height: 1px;
-        margin: 20px 0;
-    }
-            
-    .copyright {
-        text-align: center;
-    }
+        justify-content:center;
+        font-size:10px;
+}
